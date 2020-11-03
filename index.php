@@ -2,6 +2,8 @@
             class User
             {
               public $name;
+              public $username;
+              public $email;
 
               function addFriend($name){
                 echo "$name" . " added a friend. <br>";
@@ -10,9 +12,9 @@
                 echo "$name" . " posted a status. <br>";
               }
             }
-            $usernew = new User();
-            echo $usernew->addFriend('Ken Zedric Cortes');
+            $example = new User();
+            echo $example->addFriend('Ken Zedric Cortes');
             echo "<br>";
-            echo $usernew->postStatus('Ken Zedric Cortes');
+            echo $example->postStatus('Ken Zedric Cortes');
 
       ?>
